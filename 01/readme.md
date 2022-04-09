@@ -18,7 +18,7 @@ function draw() {
 	background(color(200, 100, 100)); // Set the background to a red color
 	fill(color(255,255,255));
 	textSize(60);
-	text(`(${mouseX}, ${mouseY})`, 40, 60);
+	text(`(${mouseX}, ${mouseY})`, 40, 60); // Create text at (40, 60)
 	noStroke(); // Have created circles have no border/stroke
 	fill(color(0, 250, 0, 200)); // Have created circles be a transparent green
 	circle(mouseX, mouseY, 2*r); // Draw a circle with radius r where the mouse is
@@ -52,7 +52,7 @@ Create a program which has a circle which bounces around the screen. The screen 
 ### Part B
 When the circle bounces, it must bounce at the circumference.
 ### Part C
-When the circle is closer to the user's mouse, it's radius increases visually, but does not affect how it bounces. The growth of the radius is continuously linearly proportional to the distance of the mouse. For example when the user's mouse is within 100 pixels of the center of the circle, its radius will be its original size. It increases its radius up to 2 times the original size when it is 0 pixels away and 1.5 times the size when the mouse is 50 pixels away.
+When the circle is closer to the user's mouse, its radius increases visually, but does not affect how it bounces. The growth of the radius is continuously linearly proportional to the distance of the mouse. For example when the user's mouse is within 100 pixels of the center of the circle, its radius will be its original size. It increases its radius up to 2 times the original size when it is 0 pixels away and 1.5 times the size when the mouse is 50 pixels away.
 ### Part D
 Support up to N circles to render this animation of parts A-C
 ## Problem 2
