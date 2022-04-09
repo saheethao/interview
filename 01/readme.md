@@ -16,7 +16,7 @@ function setup() {
 
 function draw() {
 	background(color(200, 100, 100)); // Set the background to a red color
-	color(255,255,255);
+	fill(color(255,255,255));
 	textSize(60);
 	text(`(${mouseX}, ${mouseY})`, 40, 60);
 	noStroke(); // Have created circles have no border/stroke
